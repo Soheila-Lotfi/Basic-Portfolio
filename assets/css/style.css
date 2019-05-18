@@ -6,10 +6,8 @@
 Body{
 
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    
-    /* background-color:red; */
     color: #777777;
-    background-image: url('white_wall_hash.png');
+    background-image: url('../images/white_wall_hash.png');
     
 }
 
@@ -23,27 +21,6 @@ header {
     margin-bottom: 4vh;
     padding: 0px;
     box-sizing: content-box;
-}
-.portfolioheader{
-margin-bottom: 2vh;
-}
-
-nav {
-    float: right;
-    display: inline-block;
-    color: #777777;
-    height: 10vh;
-    padding: 3vh;
-}
-
-nav a{
-    margin-left: 15px;
-    text-decoration: none;
-    color: #777777;
-}
-
-nav a:hover{
-    color: red;
 }
 
 .header {
@@ -61,70 +38,60 @@ h1{
     padding: 3vh 5vh;
    
 }
+
+nav {
+    float: right;
+    color: #777777;
+    height: 10vh;
+    padding: 3vh;
+}
+
+nav a{
+    text-decoration: none;
+    color: #777777;
+    border-width: 0 0 0 2px;
+    border-style: solid;
+    padding-left: 12px;
+    border-color: #dddddd;
+    margin-left: 15px;
+}
+
+nav :first-child{
+    border-width:0;
+}
+
+nav a:hover{
+    color:#A2E8B6;
+}
+
 h2{  
     padding: 5vh;  
     height: 10vh;
     color: #4aaaa5;
-    /* margin: 30px 30px 30px 20px;
-    padding:10px; */
- }
+  }
 
 h1, h2{
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 4vh;
 }
 
-
+main hr{
+    background-color: #c0c0c0;
+    width: 900px;
+    height: 0.75vh;
+    opacity: 0.5;  
+}
+  
 main{
+    display:block;
     background-color: #ffffff;
+    width: 960px;
+    height: 68vh;
     border-color:#dddddd;
     border-width: 1px;
     border-style:solid;
-    width: 960px;
     margin: 0 auto;
-    display:block;
-    height: 68vh;
     overflow: hidden;
-    /* background-image: url('assets/images/LOGO.jpg'); */
-   
-}
-.portfoliomain{
-    height: 77vh;
-}
- .logo{
-
-    width: 250px;
-    height:25vh;
-    margin-bottom: 3vh;
- }
-
- .portfolioimages{
-     width: 200px;
-     height: 300px;
-     overflow: hidden;
- }
-label{
-    display:block;
-}
-#name, #email {
-
-    margin-top:1vh;
-    Margin-bottom:1.5vh;
-    display:block;
-    width: 900px;
-    height:5vh;
-}
-#message{
-    width:900px;
-    height:15vh;
-    margin-top:1vh;
-    Margin-bottom:1.5vh;
-    display:block;
-}
-#submit{
-    background-color: #4aaaa5;
-    position: absolute;
-    bottom:20vh;
 
 }
 
@@ -133,47 +100,96 @@ label{
   
 }
 
-
-.firstparagraph{
-    width: 600px;
-    height: 25vh;
-    float:right;
-    color: #777777;
-    line-height: 5vh;
-}
-.secondparagraph{
-  display:block;
-  width: 900px;
-  color: #777777;
-    line-height: 5vh;
-    height:25vh;
-}
-
-
 footer{
-
+    text-align: center;
+    color: #dddddd;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
     position:fixed;
     bottom:0;
     left:0;
     width:100%;
-    text-align: center;
-    color: #dddddd;
-    background-color: #666666;
     height: 8vh;
-    border-top: 8px solid #4aaaa5;
-    
 }
 footer p{
     margin: 2.5vh;
 }
 
-hr{
-    width:900px;
+/* styling "about" page */
+
+.logo{
+
+    width: 250px;
+    height:25vh;
+    margin-bottom: 3vh;
+ }
+
+ .firstparagraph{
+    float:right;
+    color: #777777;
+    line-height: 5vh;
+    width: 600px;
+    height: 25vh;
 }
-  
- 
 
+.secondparagraph{
+     display:block;
+     color: #777777;
+     line-height: 5vh;
+     width: 900px;
+     height:25vh;    
+}
 
+/* styling portfolio page */
 
+.portfolioheader{
+    margin-bottom: 2vh;
+}
 
+.firstrow, .secondrow, .thirdrow{
+       
+     margin-bottom: 2vh;
+        
+}
+.portfolioimages{
+    width: 200px;
+    height: 100px;
+    
+ }
+ .firstrow :last-child, .secondrow :last-child {
+    margin-left: 10px;
+ }
+
+ .portfoliomain{
+    height: 77vh;
+}
+
+/* styling contact page */
+
+label{
+    display:block;
+}
+#name, #email {
+    display:block;
+    width: 900px;
+    height:5vh;
+    margin-top:1vh;
+    Margin-bottom:1.5vh;
+}
+#message{
+    display:block;
+    width:900px;
+    height:15vh;
+    margin-top:1vh;
+    Margin-bottom:1.5vh;
+}
+#submit{
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom:20vh;
+
+}
+#submit:hover{
+    background-color: #A2E8DE;
+}
 
